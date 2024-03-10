@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="instructions">
+            ,<strong>ハートをクリックして手紙を開いてください。</strong>
+          </div>
+          <!-- Testo aggiunto -->
+          <div class="letter">
+            <div class="text">
+              <strong>Mayu.</strong>
+              <p>
+                <b>
+                  自分自身が時々馬鹿なことをしたり、今はおそらく私を憎んでいるかもしれないことは分かっています。しかし、あなたを思い浮かべると、本当に幸せな気持ちになり、自分自身を向上させようという気持ちになります。
+                  あなたは私の親友であり、ソウルメイトになってほしい。
+                  言葉で言い表せないほどあなたを愛しています。私をもっと幸せにしてくれるために、私の恋人になってくれませんか？
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+        setTimeout(() => {
+          envelope.classList.toggle("opened");
+          document.querySelector(".button-container").classList.toggle("show");
+        }, 1000); // Ritardo di 1 secondo prima di aggiungere la classe 'opened'
+      });
+    </script>
+  </body>
+</html>
