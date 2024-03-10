@@ -30,13 +30,18 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: url('file:///E:/Users/manue/Downloads/css-envelope-letter-animation-main/img/pokemon.png') no-repeat center center fixed; */
   background: var(--bg-image) no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(0.8) saturate(90%); /* Riduce la luminosità e aumenta la saturazione */
-  z-index: -1; /* Assicura che l'immagine sia dietro gli altri contenuti */
-  pointer-events: none; /* Evita che l'immagine interagisca con gli eventi del mouse */
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.397); /* Aggiunge un'ombra per la profondità */
+  filter: brightness(0.8) saturate(90%);
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.397);
+}
+/* Media query per schermi più piccoli */
+@media only screen and (max-width: 768px) {
+  body::before {
+    background-size: contain; /* Modifica la dimensione dell'immagine di sfondo per adattarsi a schermi più piccoli */
+  }
 }
 
 .container {
