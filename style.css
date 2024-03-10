@@ -1,7 +1,7 @@
 :root {
   --primary: #fff;
   /* --bg-color: rgb(13, 199, 90); */
-  --bg-image: url('../img/bulbasaur2.png'); /* Immagine di sfondo predefinita */
+  --bg-image: url('../img/bulbasaur.png'); /* Immagine di sfondo predefinita */
   --bg-envelope-color: #f5edd1;
   /* --text-bg-color: url('file:///E:/Users/manue/Downloads/css-envelope-letter-animation-main/img/bulbasaurLetter2.jpg');  */
   --text-bg-color: rgb(255, 255, 255);
